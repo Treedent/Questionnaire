@@ -2,31 +2,18 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Question;
 use App\Models\Questionnaire;
+use App\Models\Reponse;
 use Livewire\Component;
 
 class ToutesLesReponses extends Component
 {
-
-    public $choix_questionnaire;
-
-    /**
-     * Initialise le composant.
-     */
-    public function mount()
-    {
-        $this->choix_questionnaire = 1;
-    }
+    public $questionsReponses;
 
     public function render()
     {
-        $questionnaires = Questionnaire::all();
-        return view('livewire.toutes-les-reponses', compact('questionnaires'));
+        $this->questionsReponses = Reponse::with('question')->orderBy('created_at', 'DESC')->get();
+        return view('livewire.toutes-les-reponses')->with('reponses', $this->questionsReponses);
     }
-
-    public function updated($name, $value)
-    {
-        dd(['name'=>$name, $value]);
-    }
-
 }

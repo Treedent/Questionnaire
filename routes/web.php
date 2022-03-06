@@ -36,11 +36,11 @@ Route::group(['middleware' => [$authMiddleware, 'verified']], function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/toutes-les-reponses', [toutesLesReponses::class, 'render'])
+    Route::get('/toutes-les-reponses', toutesLesReponses::class)
         ->name('toutes-les-reponses');
-    Route::get('/reponse-par-email', [reponseParEmail::class, 'render'])
+    Route::get('/reponse-par-email', reponseParEmail::class)
         ->name('reponse-par-email');
-    Route::get('/reponse-individuellement', [reponseIndividuellement::class, 'render'])
+    Route::get('/reponse-individuellement', reponseIndividuellement::class)
         ->name('reponse-individuellement');
 
 });
