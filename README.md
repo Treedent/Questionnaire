@@ -9,9 +9,10 @@
 
 ## Installation
 
-- aaaaaa
-- bbbbbbb
-- ccccccc
+- Nécessite PHP>=8.0 
+- Cloner la repository git : `git clone https://github.com/Treedent/Questionnaire.git`
+- Créer une base de donnée MySQL.
+- 
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
