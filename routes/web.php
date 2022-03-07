@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ApiTester;
 use App\Http\Livewire\ReponseForm;
 use App\Http\Livewire\ReponseIndividuellement;
 use App\Http\Livewire\ReponseParEmail;
@@ -32,15 +33,11 @@ $authMiddleware = config('jetstream.guard')
     : 'auth';
 
 Route::group(['middleware' => [$authMiddleware, 'verified']], function () {
-
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/toutes-les-reponses', toutesLesReponses::class)
-        ->name('toutes-les-reponses');
-    Route::get('/reponse-par-email', reponseParEmail::class)
-        ->name('reponse-par-email');
-    Route::get('/reponse-individuellement', reponseIndividuellement::class)
-        ->name('reponse-individuellement');
-
+    Route::get('/toutes-les-reponses', toutesLesReponses::class)->name('toutes-les-reponses');
+    Route::get('/reponse-par-email', reponseParEmail::class)->name('reponse-par-email');
+    Route::get('/reponse-individuellement', reponseIndividuellement::class)->name('reponse-individuellement');
+    Route::get('/api-tester', ApiTester::class)->name('api-tester');
 });

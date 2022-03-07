@@ -20,7 +20,7 @@
     <div class="p-6">
         <div class="flex items-center">
             {!! $book !!}
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laravel.com/docs">Consulter toutes les réponses</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Consulter toutes les réponses</div>
         </div>
 
         <div class="ml-12">
@@ -37,7 +37,7 @@
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
         <div class="flex items-center">
             {!! $book !!}
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laracasts.com">Consulter les réponses individuellement</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Consulter les réponses individuellement</div>
         </div>
 
         <div class="ml-12">
@@ -54,7 +54,7 @@
     <div class="p-6 border-t border-gray-200">
         <div class="flex items-center">
             {!! $book !!}
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://tailwindcss.com/">Consulter les réponses par adresse mail</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Consulter les réponses par adresse mail</div>
         </div>
 
         <div class="ml-12">

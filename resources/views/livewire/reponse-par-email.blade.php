@@ -14,7 +14,7 @@
         </div>
 
         @if($emailError)
-            <h2 class="text-red-500">Veuillez saisir une adresse mail valide !</h2>
+            <h3 class="text-red-500">Veuillez saisir une adresse mail valide !</h3>
         @endif
 
         @if(isset($questionReponses))
