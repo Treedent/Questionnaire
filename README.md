@@ -2,12 +2,10 @@
 
 # Application Questionnaire TEST
 
-|<img src="assets/laravel.svg" alt="Laravel framework" width="200"> | <img src="assets/livewire.svg" alt="Laravel Livewire" width="200"> |
-| ------------- | -------------:|
-| <img src="assets/jetstream.svg" alt="Laravel Jetstream" width="200"> | <img src="assets/tailwindcss.svg" alt="Tailwind Css" width="200"> |
-| ------------- | -------------:|
-| <img src="assets/php8_1.svg" alt="PHP 8.1" width="200"> | <img src="assets/mysql.svg" alt="MySQL" width="200">|
-| ------------- | -------------:|
+|<img src="assets/laravel.svg" alt="Laravel framework" width="200"> | <img src="assets/livewire.svg" alt="Laravel Livewire" width="200"> | <img src="assets/tailwindcss.svg" alt="Tailwind Css" width="200"> |
+| ------------- | :-------------:| -------------:|
+| <img src="assets/jetstream.svg" alt="Laravel Jetstream" width="200"> | <img src="assets/php8_1.svg" alt="PHP 8.1" width="200"> | <img src="assets/mysql.svg" alt="MySQL" width="200">|
+-------
 
 ## Installation
 
