@@ -1,5 +1,13 @@
-<img src="https://raw.githubusercontent.com/Treedent/Questionnaire/master/assets/logo_bocal_academy.svg?token=GHSAT0AAAAAABSDO35X775A4KVCSOOZVRLEYRGJH2A" alt="Le Bocal Academy" width="100">
+<img src="assets/logo_bocal_academy.svg" alt="Le Bocal Academy" width="100">
 
+# Application Questionnaire TEST
+
+<img src="assets/laravel.svg" alt="Laravel framework" width="200">
+<img src="assets/livewire.svg" alt="Laravel Livewire" width="200">
+<img src="assets/jetstream.svg" alt="Laravel Jetstream" width="200">
+<img src="assets/tailwindcss.svg" alt="Tailwind Css" width="200">
+<img src="assets/php8_1.svg" alt="PHP 8.1" width="200">
+<img src="assets/mysql.svg" alt="MySQL" width="200">
 
 
 ## Installation
