@@ -9,12 +9,24 @@
 
 ## Installation
 
-- Nécessite PHP>=8.0 
-- Cloner la repository git : `git clone https://github.com/Treedent/Questionnaire.git`
-- Créer une base de donnée MySQL.
-- 
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Nécessite PHP>=8.0.
+* Cloner la repository git : `git clone https://github.com/Treedent/Questionnaire.git`.
+* Créer une base de donnée MySQL.
+* Configurer votre fichier `.env` avec les accès à la base de données.
+* Mettre à jour les dépendances NPM : `npm install`
+* Générer les assets : `npm run prod`
+* Lancer les migrations : `php artisan migrate`
+* Lancer les seeds pour l'équipe, le user, le questionnaire et les questions :
+    * `php artisan db:seed --class=TeamSeeder`
+    * `php artisan db:seed --class=UserSeeder`
+    * `php artisan db:seed --class=QuestionnnaireSeeder`
+    * `php artisan db:seed --class=QuestionsSeeder`
+* Créer le lien symbolique du storage :
+    * php artisan storage:link
+* Lancer le serveur Web :
+    *`php artisan serve`
+* Se rendre à l'adresse `http://127.0.0.1:8000` dans votre navigateur.
+* Enjoy !
 
 
 ## License
