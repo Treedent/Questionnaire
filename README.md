@@ -13,6 +13,8 @@
 * Cloner la repository git : `git clone https://github.com/Treedent/Questionnaire.git`.
 * Créer une base de donnée MySQL.
 * Configurer votre fichier `.env` avec les accès à la base de données.
+* Mettre à jour les dépendances PHP :
+    * `composer update`
 * Mettre à jour les dépendances NPM :
     * `npm install`
 * Générer les assets :
