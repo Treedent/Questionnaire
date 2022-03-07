@@ -22,10 +22,12 @@
     * `php artisan db:seed --class=QuestionnnaireSeeder`
     * `php artisan db:seed --class=QuestionsSeeder`
 * Créer le lien symbolique du storage :
-    * php artisan storage:link
+    * `php artisan storage:link`
 * Lancer le serveur Web :
-    *`php artisan serve`
+    * `php artisan serve`
 * Se rendre à l'adresse `http://127.0.0.1:8000` dans votre navigateur.
+* Login administrateur : `admin@questionnaire.lba`
+* mot de passe : `password`
 * Enjoy !
 
 
