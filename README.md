@@ -13,9 +13,12 @@
 * Cloner la repository git : `git clone https://github.com/Treedent/Questionnaire.git`.
 * Créer une base de donnée MySQL.
 * Configurer votre fichier `.env` avec les accès à la base de données.
-* Mettre à jour les dépendances NPM : `npm install`
-* Générer les assets : `npm run prod`
-* Lancer les migrations : `php artisan migrate`
+* Mettre à jour les dépendances NPM :
+    * `npm install`
+* Générer les assets :
+    * `npm run prod`
+* Lancer les migrations :
+    * `php artisan migrate`
 * Lancer les seeds pour l'équipe, le user, le questionnaire et les questions :
     * `php artisan db:seed --class=TeamSeeder`
     * `php artisan db:seed --class=UserSeeder`
@@ -26,8 +29,11 @@
 * Lancer le serveur Web :
     * `php artisan serve`
 * Se rendre à l'adresse `http://127.0.0.1:8000` dans votre navigateur.
-* Login administrateur : `admin@questionnaire.lba`
-* mot de passe : `password`
+* Login administrateur : 
+    * `admin@questionnaire.lba`
+* mot de passe : 
+    * `password`
+
 * Enjoy !
 
 
