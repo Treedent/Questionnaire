@@ -20,9 +20,13 @@ use Livewire\Component;
 
 class ReponseForm extends Component
 {
+
+    /**
+     * Livewire public properties
+     */
+
     /* ID du questionnaire par défaut */
     private $questId = 1;
-
     /* Données traitées par le formulaire */
     public $reponseform = [
         'reponse_1'    => '',
@@ -33,7 +37,6 @@ class ReponseForm extends Component
         'email_1'       => '',
         'email_2'       => ''
     ];
-
     /* Message au dessus du formulaire */
     public $topMessage;
 
@@ -47,7 +50,6 @@ class ReponseForm extends Component
 
     /**
      * Affiche le formulaire du questionnaire.
-     *
      * @return Application|Factory|View
      */
     public function render()
