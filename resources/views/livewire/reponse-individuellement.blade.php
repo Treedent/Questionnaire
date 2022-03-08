@@ -38,25 +38,29 @@
         </form>
 
         @if ($selectedQuestion>0)
-            <div class="overflow-hidden shadow-md sm:rounded-lg mt-6">
-                <table class="w-full text-left rounded-lg">
-                    <thead>
-                    <tr class="bg-gray-800 text-gray-200 border border-b-0">
-                        <th class="px-3 py-3 uppercase">Date</th>
-                        <th class="px-3 py-3 uppercase">Email</th>
-                        <th class="px-3 py-3 uppercase">R&eacute;ponse</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach ($reponses as $rowkey=>$reponse)
-                        <tr class="w-full {{ $rowkey % 2 == 0 ? 'bg-gray-500 text-gray-200': 'bg-gray-200 text-gray-500' }} whitespace-no-wrap border border-b-0">
-                            <td class="px-3 py-3">{{ \Carbon\Carbon::parse($reponse->created_at)->format('d/m/Y H:i:s') }}</td>
-                            <td class="px-3 py-3"><a href="mailto:{{$reponse->email}}">{{$reponse->email}}</a></td>
-                            <td class="px-3 py-3 text-justify">{{$reponse->reponse}}</td>
+            <div class="overflow-hidden shadow-md sm:rounded-lg mt-6 px-4 py-4">
+                @if($reponses->count())
+                    <table class="w-full text-left rounded-lg">
+                        <thead>
+                        <tr class="bg-gray-800 text-gray-200 border border-b-0">
+                            <th class="px-3 py-3 uppercase">Date</th>
+                            <th class="px-3 py-3 uppercase">Email</th>
+                            <th class="px-3 py-3 uppercase">R&eacute;ponse</th>
                         </tr>
-                    @endforeach
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                        @foreach ($reponses as $rowkey=>$reponse)
+                            <tr class="w-full {{ $rowkey % 2 == 0 ? 'bg-gray-500 text-gray-200': 'bg-gray-200 text-gray-500' }} whitespace-no-wrap border border-b-0">
+                                <td class="px-3 py-3">{{ \Carbon\Carbon::parse($reponse->created_at)->format('d/m/Y H:i:s') }}</td>
+                                <td class="px-3 py-3"><a href="mailto:{{$reponse->email}}">{{$reponse->email}}</a></td>
+                                <td class="px-3 py-3 text-justify">{{$reponse->reponse}}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                @else
+                    <h3 class="text-red-500">Aucune réponse n'est actuellement enregistrée. Veuillez répondre au <a href="{{ route('questionnaire') }}" class="underline">questionnaire</a>.</h3>
+                @endif
             </div>
         @endif
     </div>
