@@ -12,9 +12,9 @@
 * Nécessite PHP>=8.0.
 
 * Cloner la repository git :
-    *`git clone https://github.com/Treedent/Questionnaire.git`
+    * `git clone https://github.com/Treedent/Questionnaire.git`
 
-* Créer une base de donnée MySQL.
+* Créer une base de données MySQL.
 
 * Copier le fichier `.env.example` vers le fichier `.env` :
     * `cp .env.example .env` 
